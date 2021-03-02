@@ -93,6 +93,11 @@ class SalesController extends Controller
         $physicalStore = Physical_store_channel::where('status', 'pending')->get();
         return view('superadmin.soldtable')->with('store', $physicalStore);
     }
+    public function alltable()
+    {
+        $physicalStore = Physical_store_channel::all();
+        return view('superadmin.soldtable')->with('store', $physicalStore);
+    }
     public function upload()
     {
         return view('superadmin.upload');

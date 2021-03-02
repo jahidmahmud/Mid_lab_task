@@ -50,6 +50,7 @@ Route::group(['middleware' => ['auth']], function () {
         Route::get('/physical_store/pending_log', [SalesController::class, 'loggspending'])->name('Sales.pending.log');
         Route::get('/physical_store/pdfdownload', [SalesController::class, 'download'])->name('Sales.pdf.download');
         Route::get('/physical_store/uploadexcel', [SalesController::class, 'upload'])->name('Sales.excel.upload');
+        Route::get('/physical_store/all', [SalesController::class, 'alltable'])->name('Sales.all.log');
     });
 });
 
