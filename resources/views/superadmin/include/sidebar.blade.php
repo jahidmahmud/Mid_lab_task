@@ -71,6 +71,14 @@
                 </p>
                 </a>
             </li>
+            <li class="nav-item">
+                <a href="{{ route('product.index') }}" class="nav-link">
+                <i class="nav-icon text-primary fab fa-shopify"></i>
+                <p>
+                    Product Management
+                </p>
+                </a>
+            </li>
         </ul>
     </nav>
     <!-- /.sidebar-menu -->
